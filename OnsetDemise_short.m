@@ -6,6 +6,8 @@
 % Notes: 
 % + Subset of the full code written for the N/S American Monsoon
 %   project, to show the Bombardi and Carvalho approach. 
+% + Code reads rainfall data for indicated coordinates (1 gridbox) directly
+%   from the IRI Data Library (CPC-Unified - Chen et al 2008).
 % + For illustration purposes, only one gridbox/station is used.
 % + The method has issues when the year is too dry (as one should expect).
 
@@ -23,10 +25,8 @@ cd /Users/agmunoz/Documents/Angel/Weather_within_climate
 down=1;   %1=yes; 0=no (0 assumes the data is locally available in *.mat files; *not* NetCDF!)
 
 %Define temporal parameters:
-seasons='Jan';
-seasone='Dec';
-yeari=1981; %first year (MUST BE >=1995 AND <2005!)
-yeare=2014; %last year  (MUST BE >2006!)    %Note: for chi there're missing values in 2009!!!!
+yeari=1981; %first year (MUST BE >=1981 AND <2005!)
+yeare=2014; %last year  (MUST BE >2006!)    
 
 %Define gridbox coordinates:
 slat=18.3810;
