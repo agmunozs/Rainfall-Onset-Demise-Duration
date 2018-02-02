@@ -220,7 +220,7 @@ iyr=40;
 figure(2);clf %S,Sb,dSb for onset
 pfig=plot(1:72,squeeze(S(iyr,1:72)),1:72,squeeze(Sb(iyr,1:72)),1:72,squeeze(dSb(iyr,1:72)),'LineWidth',3);hold on
 bfig=bar(1:72,squeeze(pentad(1:72,iyr)'))   
-plot(1:73,pentad(:,iyr),onset(iyr),0,'*k',demise(iyr),0,'*k','markers',12)
+plot(1:73,pentad(:,iyr),onset(iyr),0,'*g',demise(iyr),0,'*k','markers',12,'LineWidth', 2)
 title('S,Sb,dSb for onset')
 xlabel('pentad')
 legend('S','Sb','dSb/dt','rainfall','zero line','onset','demise')
@@ -230,7 +230,7 @@ legend('boxoff')
 figure(3);clf %S,Sb,dSb for demise
 pfig=plot(1:72,squeeze(S2(iyr,1:72)),1:72,squeeze(Sb2(iyr,1:72)),1:72,squeeze(dSb2(iyr,1:72)),'LineWidth',3);hold on
 bfig=bar(1:72,squeeze(pentad(1:72,iyr)'))   
-plot(1:73,pentad(:,iyr),onset(iyr),0,'*k',demise(iyr),0,'*k','markers',12)
+plot(1:73,pentad(:,iyr),onset(iyr),0,'*g',demise(iyr),0,'*k','markers',15,'LineWidth', 2)
 title('S,Sb,dSb for demise')
 xlabel('pentad')
 legend('S','Sb','dSb/dt','rainfall','zero line','onset','demise')
