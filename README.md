@@ -1,8 +1,6 @@
 # Rainfall-Onset-Demise-Duration
 Different codes to analyze rainfall characteristics, in particular to define onset, demise (and therefore duration). 
 
-Matlab script to compute onset/demise (and duration)
-
 AG Munoz (IRI Columbia U) - agmunoz@iri.columbia.edu and Carlos Martinez - carlos.martinez@columbia.edu
 
 Project: Predictability of the onset, duration and demise of the North and South American Monsoon Systems: 
