@@ -84,11 +84,12 @@ display('Computing initial pentad... (this takes some time)')
                 %Find minimum before first large maximum, for rainfall onset
                 xfirstmax=min(idxde(al(end)),idxde(al(end-1)));
                 pp=find(idxon < xfirstmax);
-                inipent=idxon(pp(end-1));
+                inipent=idxon(pp(end)); %CHANGE FROM END-1 TO END
                 %Find minimum after second larg maximum, for rainfall demise
                 xsecmax=max(idxde(al(end)),idxde(al(end-1)));
-                pp=find(idxon > xsecmax);
-                inipent2=idxon(pp(1));
+                %pp=find(idxon > xsecmax);
+                %inipent2=idxon(pp(1));
+                inipent2=xsecmax %MADE THIS INTO THE 2ND MAX FOR BEG. OF DEMISE
                 %Find minimum between two largest maxima, for MSD purposes
                 pp=find(idxon < xsecmax & idxon > xfirstmax);
                 inipent3=idxon(pp);
